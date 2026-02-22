@@ -1,0 +1,8 @@
+{% extends "admin/change_list.html" %}
+
+{% block result_list %}
+    <div style="background-color: #f1f1f1; padding: 10px; margin-bottom: 20px; font-size: 16px; font-weight: bold; border-left: 5px solid #28a745;">
+        Total Platform Revenue (5% Commissions): ${{ total_revenue }}
+    </div>
+    {{ block.super }}
+{% endblock %}
